@@ -1,4 +1,4 @@
-# A<ddi>CTIVE
+# A(ddi)CTIVE
 
 Una mini librería que sirve para atraer la atención del usuario a tu página web por medio de divertidas animaciones proporcionadas a los divs de tu html.
 
@@ -46,7 +46,7 @@ Para realizar este proyecto implementamos las siguientes complementos:
 * babel `v.6.23.0`
 
 
-# A<ddi>CTIVE
+# A(ddi)CTIVE
 
 A mini-library you can use in your webpage to draw the attention of your users with fun animations given to any div (if not all!) of your html.
 
