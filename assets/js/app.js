@@ -16,7 +16,7 @@ jQuery.fn.animateAuto = function(prop, speed, callback){
    });  
 }
 $(window).ready(function(){
-   $('h2').click(function(){
+   $('.desple').mouseover(function(){
       if($(this).next().hasClass('desplegado')){
          $(this).next().removeClass('desplegado').animate({height:0},500);
       }else{

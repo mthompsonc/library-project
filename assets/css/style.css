@@ -12,19 +12,58 @@ body {
 
 }
 
+/* Div background blanco con opacidad */
 .white-opacity{
   background-color: #FFFFFF; 
-  opacity: 0.8;
+  opacity: 0.7;
   margin:2.7em;
+  border-radius: 3vh;
+  padding-bottom: 2em;
+  margin-bottom: 3em;
 }
 
+/* H1, título principal */
 .title1{
-  font-size: 20vh;
+  font-size: 9vh;
   color: #FF5881;
+  text-align: center;
+  padding-bottom: 1.4vw;
+}
+
+/* Estilo para texto descriptivo */
+.description-en{
+  font-size: 1.6em;
+  margin-left: 2vw;
+  margin-right: 2vw;
   text-align: center;
 }
 
+/* Subtítulos para d */
+.subtitle{
+  color:#3E3E3E;
+}
+
+/* Div movimiento horizontal */
+
+.square{
+  width: 3em;
+  height: 3em;
+  background-color: #FF475A;
+  border: 2px solid #FF322F;
+  margin: 3em;
+  border-radius: 3px;
+}
+
+.left{
+  float:right;
+}
+
 /* Estilo Desplegable */
+
+.down{
+  height: 10em;
+  border: 1px solid red /* Borrar esto después */
+}
 
 .plegable{
    height:0;
