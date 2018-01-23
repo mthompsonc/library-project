@@ -1,0 +1,32 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+  background-image: url(../img/pexels-photo-301673.jpeg);
+  width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.white-opacity{
+  background-color: #FFFFFF; 
+  opacity: 0.8;
+  margin:2.7em;
+}
+
+.title1{
+  font-size: 20vh;
+  color: #FF5881;
+  text-align: center;
+}
+
+/* Estilo Desplegable */
+
+.plegable{
+   height:0;
+   overflow:hidden;
+}
