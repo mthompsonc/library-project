@@ -1,6 +1,6 @@
 /* Función Desplegable */
 
-jQuery.fn.animateAuto = function(prop, speed, callback){
+jQuery.fn.deploy = function(prop, speed, callback){
    var elem, height, width;
    return this.each(function(i, el){
       el = jQuery(el), elem = el.clone().css({"height":"auto","width":"auto"}).appendTo("body");
@@ -16,11 +16,11 @@ jQuery.fn.animateAuto = function(prop, speed, callback){
    });  
 }
 $(window).ready(function(){
-   $('.desple').mouseover(function(){
-      if($(this).next().hasClass('desplegado')){
-         $(this).next().removeClass('desplegado').animate({height:0},500);
+   $('.down').mouseover(function(){
+      if($('.plegable').hasClass('desplegado')){
+         $('.plegable').removeClass('desplegado').animate({height:0},500);
       }else{
-         $(this).next().addClass('desplegado').animateAuto("height",500);
+         $('.plegable').addClass('desplegado').deploy("height",500);
       }
    })
 })
