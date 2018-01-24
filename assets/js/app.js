@@ -13,6 +13,7 @@
          el.animate({"width":width}, speed, callback);
       else if(prop === "both")
          el.animate({"width":width,"height":height}, speed, callback);
+<<<<<<< Updated upstream
    });
 }
 $(window).ready(function(){
@@ -47,6 +48,17 @@ $(document).ready(function(){
 
 //  console.log('La posición es ' + $('#divToLeft').offset().top);
 //  console.log('La posición es ' + $('#divToLeft').outerHeight());
+
+
+$(window).find(".plegable")
+
+$(window).scroll(function() {
+
+  console.log(window.scrollY);
+  // body...
+})
+
+
 
 })
 
