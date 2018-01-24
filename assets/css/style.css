@@ -38,20 +38,22 @@ body {
   text-align: center;
 }
 
-/* Subtítulos para d */
+/* Subtítulos para divs */
 .subtitle{
   color:#3E3E3E;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
 }
 
 /* Div movimiento horizontal */
 
 .square{
-  width: 3em;
-  height: 3em;
+  width: 12em;
+  height: 12em;
   background-color: #FF475A;
   border: 2px solid #FF322F;
-  margin: 3em;
   border-radius: 3px;
+  margin-bottom: 10em;
 }
 
 .left{
@@ -61,18 +63,18 @@ body {
 /* Estilo Desplegable */
 
 .down{
-  border: 1px solid red /* Borrar esto después */
+  /* border: 1px solid red Borrar esto después */
 }
 
 .plegable{
-   height:0;
-   overflow:hidden;
+  height:0;
+  overflow:hidden;
 }
 
 #toTheRight, #toTheLeft, #down {
-  height: 100vh;
+  height: 30em;
 }
 
 .head {
-  margin-bottom: 100vh;
+  margin-bottom: 10em;
 }
