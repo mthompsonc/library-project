@@ -61,11 +61,18 @@ body {
 /* Estilo Desplegable */
 
 .down{
-  height: 10em;
   border: 1px solid red /* Borrar esto después */
 }
 
 .plegable{
    height:0;
    overflow:hidden;
+}
+
+#toTheRight, #toTheLeft, #down {
+  height: 100vh;
+}
+
+.head {
+  margin-bottom: 100vh;
 }
