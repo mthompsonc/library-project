@@ -9,4 +9,8 @@ it('should be a number', function () {
 window.scrollY.should.be.a('number');
 
 });
+
+describe('movement', function() {
+it('should have a position relative', function () {
+expect(('#divToRight').to.equal('position', 'relative');
 });
