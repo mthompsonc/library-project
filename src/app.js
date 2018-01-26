@@ -1,3 +1,4 @@
+const $ = require('jquery');
 
 $(document).ready(function() {
   const divToLeft = $('#divToLeft');
@@ -38,10 +39,10 @@ $(document).ready(function() {
     });
   };
 
-    jQuery.fn.deploy = function(prop, speed, callback) {
+    $.fn.deploy = function(prop, speed, callback) {
       var elem, height, width;
       return this.each(function(i, el) {
-        el = jQuery(el), elem = el.clone().css({
+        el = $(el), elem = el.clone().css({
           'height': 'auto',
           'width': 'auto'}).appendTo('body');
         height = elem.css('height'),
