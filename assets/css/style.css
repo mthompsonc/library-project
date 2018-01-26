@@ -72,9 +72,10 @@ body {
 }
 
 #toTheRight, #toTheLeft, #down {
-  height: 30em;
+  height: 100vh;
 }
 
 .head {
-  margin-bottom: 10em;
+  margin-bottom: 100vh;
+
 }
