@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 
 
- $.fn.toLeft = function() {
+  $.fn.toLeft = function() {
     $(window).scroll(function() {
       if (window.scrollY >= cordLeft) {
         console.log('somos iguales');
