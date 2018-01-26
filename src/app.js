@@ -1,17 +1,21 @@
+const $ = require('jquery');
 
 $(document).ready(function() {
   const divToLeft = $('#divToLeft');
   const cordLeft = divToLeft.offset().top - 200;
   const divToRight = $('#divToRight');
   const cordRight = divToRight.offset().top - 200;
-  const toDown = $('.plegable');
-  const cordDown = toDown.offset().top - 400;
+  const divToDown = $('.plegable');
+  const cordDown = divToDown.offset().top - 400;
 
-  divToLeft.toLeft();
   divToRight.toRight();
-  toDown.toDown();
+  divToLeft.toLeft();
+  divToDown.toDown();
+});
 
-  jQuery.fn.toLeft = function() {
+
+
+  $.fn.toLeft = function() {
     $(window).scroll(function() {
       if (window.scrollY >= cordLeft) {
         console.log('somos iguales');
@@ -23,7 +27,7 @@ $(document).ready(function() {
     });
   };
 
-  jQuery.fn.toRight = function() {
+  $.fn.toRight = function() {
     $(window).scroll(function() {
       if (window.scrollY >= cordRight) {
         $('#divToRight').css('position', 'relative');
@@ -35,11 +39,10 @@ $(document).ready(function() {
     });
   };
 
-  jQuery.fn.toDown = function() {
-    jQuery.fn.deploy = function(prop, speed, callback) {
+    $.fn.deploy = function(prop, speed, callback) {
       var elem, height, width;
       return this.each(function(i, el) {
-        el = jQuery(el), elem = el.clone().css({
+        el = $(el), elem = el.clone().css({
           'height': 'auto',
           'width': 'auto'}).appendTo('body');
         height = elem.css('height'),
@@ -55,6 +58,7 @@ $(document).ready(function() {
       });
     };
 
+ $.fn.toDown = function() {
     $(window).scroll(function() {
       if (window.scrollY >= cordDown) {
         console.log('somos iguales');
@@ -62,6 +66,3 @@ $(document).ready(function() {
       }
     });
   };
-});
-
-
