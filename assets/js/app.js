@@ -7,6 +7,10 @@ $(document).ready(function() {
   const toDown = $('.plegable');
   const cordDown = toDown.offset().top - 400;
 
+  divToLeft.toLeft();
+  divToRight.toRight();
+  toDown.toDown();
+
   jQuery.fn.toLeft = function() {
     $(window).scroll(function() {
       if (window.scrollY >= cordLeft) {
@@ -59,4 +63,5 @@ $(document).ready(function() {
     });
   };
 });
+
 

@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/mthompsonc/library-project#readme",
   "dependencies": {
-    "chai-jquery": "^2.0.0"
+    "chai-jq": "0.0.9"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

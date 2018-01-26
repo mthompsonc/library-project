@@ -9,7 +9,6 @@ body {
   width: 100%;
   min-height: 100%;
   background-repeat: no-repeat;
-
 }
 
 /* Div background blanco con opacidad */
@@ -19,7 +18,7 @@ body {
   margin:2.7em;
   border-radius: 3vh;
   padding-bottom: 2em;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
 }
 
 /* H1, título principal */
@@ -41,8 +40,8 @@ body {
 /* Subtítulos para divs */
 .subtitle{
   color:#3E3E3E;
-  margin-top: 20vh;
-  margin-bottom: 20vh;
+  margin-top: 8vw;
+  margin-bottom: 8vw;
 }
 
 /* Div movimiento horizontal */
@@ -53,7 +52,7 @@ body {
   background-color: #FF475A;
   border: 2px solid #FF322F;
   border-radius: 3px;
-  margin-bottom: 10em;
+  margin-bottom: 1em;
 }
 
 .left{
@@ -72,7 +71,7 @@ body {
 }
 
 #toTheRight, #toTheLeft, #down {
-  height: 100vh;
+  height: 70vh;
 }
 
 .head {
