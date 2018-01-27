@@ -1,4 +1,5 @@
-/*
+$(document).ready (function (){
+  /*
 * Movimiento div de izquierda a centro.
 */
   $(window).scroll(function() {
@@ -8,8 +9,11 @@
       console.log('somos iguales');
 
       $('#divToLeft').css('position', 'relative');
-      /* Para que quede centrado, la función animate toma el ancho del div padre del div que se moverá y la divide en 2, luego le resta el ancho del div que se moverá dividido en 2 */
+      // Se le debe asignar la posición relative, para que el div se pueda mover.
       $('#divToLeft').animate({right: $('#divToLeft').parent().width() / 2 - $('#divToLeft').width() / 2});
+      /*
+      * Para que quede centrado, la función animate toma el ancho del div padre del div que se moverá y la divide en 2, luego le resta el ancho del div que se moverá dividido en 2.
+      */
       };
   });
 
@@ -22,19 +26,48 @@
     const cordRight = divToRight.offset().top - 200;
       if (window.scrollY >= cordRight) {
         $('#divToRight').css('position', 'relative');
-        /* Para que quede centrado, la función animate toma el ancho del div padre del div que se moverá y la divide en 2
-        *luego le resta el ancho del div que se moverá dividido en 2
-        */
+        // Se le debe asignar la posición relative, para que el div se pueda mover.
         $('#divToRight').animate({left: $('#divToRight').parent().width() / 2 - $('#divToRight').width() / 2});
+        /*
+        * Para que quede centrado, la función animate toma el ancho del div padre del div que se moverá y la divide en 2 luego le resta el ancho del div que se moverá dividido en 2
+        */
       };
     });
-  };
+
 
 
 /*
 * Desplegable
 */
 
+jQuery.fn.deploy = function(prop, speed, callback){
+   var elem, height, width;
+   return this.each(function(i, el){
+      el = jQuery(el), elem = el.clone().css({"height":"auto","width":"auto"}).appendTo("body");
+      height = elem.css("height"),
+      width = elem.css("width"),
+      elem.remove();
+      if(prop === "height")
+         el.animate({"height":height}, speed, callback);
+      else if(prop === "width")
+         el.animate({"width":width}, speed, callback);  
+      else if(prop === "both")
+         el.animate({"width":width,"height":height}, speed, callback);
+   });  
+}
+$(window).ready(function(){
+   $(window).scroll(function(){
+      const divToDown = $('.plegable');
+      const cordDown = divToDown.offset().top - 400;
+      if (window.scrollY >= cordDown) {
+        console.log('somos iguales');
+        $('.plegable').addClass('desplegado').deploy('height', 500);
+      }
+      })
+   })
+})
+
+/*
     jQuery.fn.deploy = function(prop, speed, callback) {
       var elem, height, width;
       return this.each(function(i, el) {
@@ -62,3 +95,5 @@
         $('.plegable').addClass('desplegado').deploy('height', 500);
       }
     });
+      });
+*/

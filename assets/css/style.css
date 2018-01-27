@@ -59,22 +59,36 @@ body {
   float:right;
 }
 
-/* Estilo Desplegable */
+/* Estilo a las secciones de los divs con movimiento */
 
-.down{
-  /* border: 1px solid red Borrar esto después */
+#toTheRight, #toTheLeft, {
+  height: 70vh;
 }
+
+/* Estilo Desplegable */
 
 .plegable{
   height:0;
   overflow:hidden;
+  align-items: center;
 }
 
-#toTheRight, #toTheLeft, #down {
-  height: 70vh;
+.down{
+  margin-bottom: 10em;
 }
 
-.head {
-  margin-bottom: 100vh;
-
+/* Estilo para footer. */
+footer {
+    width: 100%;
+    height: 3em;
+    background-color:#a9404585;
+    color: #FFF4FD;
+    font-size: 1.5em;
+    line-height: 3;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: -1em;
 }
+
+
+
