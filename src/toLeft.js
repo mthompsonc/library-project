@@ -1,10 +1,7 @@
 const $ = require('jquery');
 
-
-  const divToLeft = $('#divToLeft');
-  const cordLeft = divToLeft.offset().top - 200;
-
-  $.fn.toLeft = function() {
+    const divToLeft = $('#divToLeft');
+    const cordLeft = divToLeft.offset().top - 200;
     $(window).scroll(function() {
       if (window.scrollY >= cordLeft) {
         console.log('somos iguales');
@@ -14,5 +11,6 @@ const $ = require('jquery');
         $('#divToLeft').animate({right: $('#divToLeft').parent().width() / 2 - $('#divToLeft').width() / 2});
       };
     });
-  };
-  toLeft(
+  
+  
+  module.exports = toLeft;

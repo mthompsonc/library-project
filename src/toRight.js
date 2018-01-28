@@ -1,10 +1,7 @@
 const $ = require('jquery');
 
-
-  const divToRight = $('#divToRight');
-  const cordRight = divToRight.offset().top - 200;
-
-  $.fn.toRight = function() {
+    const divToRight = $('#divToRight');
+    const cordRight = divToRight.offset().top - 200;
     $(window).scroll(function() {
       if (window.scrollY >= cordRight) {
         $('#divToRight').css('position', 'relative');
@@ -14,6 +11,6 @@ const $ = require('jquery');
         $('#divToRight').animate({left: $('#divToRight').parent().width() / 2 - $('#divToRight').width() / 2});
       };
     });
-  };
-  toRight();
+  
 
+module.exports = toRight;
