@@ -1,6 +1,5 @@
 const $ = require('jquery');
 
-  $.fn.toRight = function() {
     const divToRight = $('#divToRight');
     const cordRight = divToRight.offset().top - 200;
     $(window).scroll(function() {
@@ -12,4 +11,6 @@ const $ = require('jquery');
         $('#divToRight').animate({left: $('#divToRight').parent().width() / 2 - $('#divToRight').width() / 2});
       };
     });
-  };
+  
+
+module.exports = toRight;
