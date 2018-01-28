@@ -27,12 +27,11 @@ addictive.toDown = function() {
 
     $(window).scroll(function() {
       if (window.scrollY >= cordDown) {
-        console.log('somos iguales');
         $('.plegable').addClass('desplegado').deploy('height', 500);
       }
     });
-  }
-};
+  };
+
 addictive.toDown();
 
 

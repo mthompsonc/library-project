@@ -1,12 +1,6 @@
-const down = require('src/toDown.js)');
-const right = require('src/toRight.js)');
-const left = require('src/toLeft.js)');
+const addictive = require('src/addictive.js)');
 
-module.exports = {
-    toDown: down,
-    toRight: right,
-    toLeft: left
-};
+module.exports = addictive;
 
 /*Uso de biblioteca
     const RUTDOM = require('rut');
