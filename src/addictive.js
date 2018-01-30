@@ -2,8 +2,9 @@ const $ = require('jquery');
 
 const addictive = {};
 
-    addictive.toDown = function() {
-(function($) {
+
+addictive.toDown = function() {
+  (function($) {
     $.fn.deploy = function() {
   $.fn.down = function(prop, speed, callback) {
       var elem, height, width;
@@ -24,32 +25,33 @@ const addictive = {};
       });
     };
 
-  const divToDown = $(this);
+  const divToDown = $('.plegable');
   const cordDown = divToDown.offset().top - 400;
 
     $(window).scroll(function() {
       if (window.scrollY >= cordDown) {
-        $(this).addClass('desplegado').down('height', 500);
+        $('.plegable').addClass('desplegado').down('height', 500);
       }
     });
-};
+    };
 }($));
- };
+  };
 
 addictive.toDown();
 
+ 
 addictive.toRight = function() {
-  (function($) {
+   (function($) {
     $.fn.slideRight = function() {
-      const divToRight = $(this);
+      const divToRight = $('#divToRight');
     const cordRight = divToRight.offset().top - 200;
     $(window).scroll(function() {
       if (window.scrollY >= cordRight) {
-        $(this).css('position', 'relative');
+        $('#divToRight').css('position', 'relative');
         /* Para que quede centrado, la función animate toma el ancho del div padre del div que se moverá y la divide en 2
         *luego le resta el ancho del div que se moverá dividido en 2
         */
-        $(this).animate({left: $(this).parent().width() / 2 - $(this).width() / 2});
+        $('#divToRight').animate({left: $('#divToRight').parent().width() / 2 - $('#divToRight').width() / 2});
       };
     });
     };
@@ -57,20 +59,21 @@ addictive.toRight = function() {
 };
 addictive.toRight();
   
-
 addictive.toLeft = function() {
-    (function($) {
+     (function($) {
     $.fn.slideLeft = function() {
-  const divToLeft = $(this);
+  const divToLeft = $('#divToLeft');
     const cordLeft = divToLeft.offset().top - 200;
     $(window).scroll(function() {
       if (window.scrollY >= cordLeft) {
-        $(this).css('position', 'relative');
+        console.log('somos iguales');
+
+        $('#divToLeft').css('position', 'relative');
         /* Para que quede centrado, la función animate toma el ancho del div padre del div que se moverá y la divide en 2, luego le resta el ancho del div que se moverá dividido en 2 */
-        $(this).animate({right: $(this).parent().width() / 2 - $(this).width() / 2});
+        $('#divToLeft').animate({right: $('#divToLeft').parent().width() / 2 - $('#divToLeft').width() / 2});
       };
     });
-      };
+  };
 }($));
   };
   addictive.toLeft();
