@@ -31,22 +31,29 @@ Primero, debes adjuntar el script que se encuentra en la carpeta src
 Luego, simplemente utilizas los plugins encontrados en la librería aplicándolos al elemento que desees (elemento al que llames por medio de DOM o jQuery).
 
 ```js
-$("#div1").slideRight();
-$("#div2").slideLeft();
-$("#btn-top").slideTop();
+$("#cualquierDiv").slideRight();
+$("#cualquierDiv").slideLeft();
+$("#cualquierDiv").slideTop();
 ```
 
+Para hacer uso del plugin slideTop es necesario aplicarlo a un div vacío, ya que la librería le agregará el botón.
+
+```html
+<div id='cualquierDiv'></div>
+```
 
 #### Requerimientos técnicos:
 Para realizar este proyecto implementamos las siguientes complementos:
 * node.js `~v.8.9.4`
 * npm `~v.5.6.0`
 * bootstrap `~v.4.0.0`
-* jQuery `~v.3.2.1`
+* jQuery `~v.3.3.1`
 * git `~v.2.16.0`
 * eslint `~v.4.15.0`
 * babel `v.6.23.0`
-
+* chai `v.4.1.2`
+* mocha `v.5.0.0`
+* jsdom `v.11.6.1`
 
 # A(ddi)CTIVE
 
@@ -81,9 +88,15 @@ First, you need to attach the script located in the folder src
 Then, you can simply trigger the animations by applying the plugins to any element you want (element you can call by DOM or Jquery)
 
 ```js
-$("#div1").slideRight();
-$("#div2").slideLeft();
-$("#btn-top").slideTop();
+$("#anyDiv").slideRight();
+$("#anyDiv").slideLeft();
+$("#anyDiv").slideTop();
+```
+
+To work with the plugin slideTop it's necessary to apply it to an empty div, being that the library will add the button.
+
+```html
+<div id='anyDiv'></div>
 ```
 
 
@@ -92,7 +105,10 @@ To make this project we used the following components:
 * node.js `~v.8.9.4`
 * npm `~v.5.6.0`
 * bootstrap `~v.4.0.0`
-* jQuery `~v.3.2.1`
+* jQuery `~v.3.3.1`
 * git `~v.2.16.0`
 * eslint `~v.4.15.0`
 * babel `v.6.23.0`
+* chai `v.4.1.2`
+* mocha `v.5.0.0`
+* jsdom `v.11.6.1`
