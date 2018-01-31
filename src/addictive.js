@@ -2,56 +2,19 @@ const $ = require('jquery');
 
 const addictive = {};
 
-
-addictive.toDown = function() {
-  (function($) {
-    $.fn.deploy = function() {
-  $.fn.down = function(prop, speed, callback) {
-      var elem, height, width;
-      return this.each(function(i, el) {
-        el = $(el), elem = el.clone().css({
-          'height': 'auto',
-          'width': 'auto'}).appendTo('body');
-        height = elem.css('height'),
-        width = elem.css('width'),
-        elem.remove();
-        if (prop === height)
-          el.animate({'height': height}, speed, callback);
-        else if (prop === 'width')
-          el.animate({'width': width}, speed, callback);
-        else if (prop === 'both')
-          el.animate({'width': width,
-            'height': height}, speed, callback);
-      });
-    };
-
-  const divToDown = $(this);
-  const cordDown = divToDown.offset().top - 400;
-
-    $(window).scroll(function() {
-      if (window.scrollY >= cordDown) {
-        $(divToDown).addClass('desplegado').down('height', 500);
-      }
-    });
-    };
-}($));
-  };
-
-addictive.toDown();
-
  
-addictive.toRight = function() {
-   (function($) {
-    $.fn.slideRight = function() {
-      const divToRight = $(this);
-    const cordRight = divToRight.offset().top - 200;
-    $(window).scroll(function() {
-      if (window.scrollY >= cordRight) {
-        $(divToRight).css('position', 'relative');
+addictive.toRight = function() { // está creando una key al objeto addictive la cuál tendrá como value una función
+   (function($) { // plugin empieza de esta manera para que así todas las variables creadas dentro de él no choquen con las de otros plugins.
+    $.fn.slideRight = function() { // nombre del plugin slideRight.
+      const divToRight = $(this); // a la variable divToRight le pasamos como valor el elemento al que se le aplicó el plugin.
+    const cordRight = divToRight.offset().top - 20%; // cordenadas de la posición de la parte superior del elemento.
+    $(window).scroll(function() { //función a aplicar cuando se haga scroll a la página
+      if (window.scrollY >= cordRight) { // condición: si la las coordenadas del scroll de la pantalla y las cordenadas de la posición del elemento son iguales.
+        $(divToRight).css('position', 'relative'); // se le agregará al elemento la posición relativa y se desencadenará la animación.
         /* Para que quede centrado, la función animate toma el ancho del div padre del div que se moverá y la divide en 2
         *luego le resta el ancho del div que se moverá dividido en 2
         */
-        $(divToRight).animate({left: $(divToRight).parent().width() / 2 - $('#divToRight').width() / 2});
+        $(divToRight).animate({left: $(divToRight).parent().width() / 2 - $(divToRight).width() / 2});
       };
     });
     };
@@ -63,7 +26,7 @@ addictive.toLeft = function() {
      (function($) {
     $.fn.slideLeft = function() {
   const divToLeft = $(this);
-    const cordLeft = divToLeft.offset().top - 200;
+    const cordLeft = divToLeft.offset().top - 20%;
     $(window).scroll(function() {
       if (window.scrollY >= cordLeft) {
         console.log('somos iguales');
