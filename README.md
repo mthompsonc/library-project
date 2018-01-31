@@ -112,4 +112,3 @@ To make this project we used the following components:
 * chai `v.4.1.2`
 * mocha `v.5.0.0`
 * jsdom `v.11.6.1`
-
