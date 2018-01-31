@@ -4,7 +4,7 @@
   "description": "This is a mini library that helps with the interaction of the divs in a webpage.",
   "main": "lib/main.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha test --reporter nyan",
     "build": "babel src -d lib",
     "tobrowser": "browserify index.js -o lib/main.js"
   },
