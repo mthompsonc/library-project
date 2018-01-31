@@ -22,17 +22,18 @@ Cuando estés listo para subir tu proyecto, solo tendrás que pedir un Pull Requ
 
 ## Aplicandolo a tu proyecto
 
-Primero, debes adjuntar el script que se encuenntra en las carpetas assets/js
+Primero, debes adjuntar el script que se encuentra en la carpeta src
 
 ```html
-<script src="assets/js/addictive.js"></script>
+<script src="src/addictive.js"></script>
 ```
 
-Luego, simplemente utilizas las funciones encontradas en la librería al llamarlas y pasarles como argumento el elemento al que quieras proporcionarle la función (elemento al que llames por medio de DOM o jQuery).
+Luego, simplemente utilizas los plugins encontrados en la librería aplicándolos al elemento que desees (elemento al que llames por medio de DOM o jQuery).
 
 ```js
-var div1 = $("#div1");
-slideRight(div1);
+$("#div1").slideRight();
+$("#div2").slideLeft();
+$("#btn-top").slideTop();
 ```
 
 
@@ -71,17 +72,18 @@ when you are ready to upload your project you only have to ask for a Pull Reques
 
 ## Setup
 
-First, you need to attach the script located in the folders assets/js 
+First, you need to attach the script located in the folder src
 
 ```html
-<script src="assets/js/addictive.js"></script>
+<script src="src/addictive.js"></script>
 ```
 
-Then, you can simply trigger the animations by calling the function you want, with the element you want to animate as the argument (element you can call by DOM or Jquery)
+Then, you can simply trigger the animations by applying the plugins to any element you want (element you can call by DOM or Jquery)
 
 ```js
-var div1 = $("#div1");
-slideRight(div1);
+$("#div1").slideRight();
+$("#div2").slideLeft();
+$("#btn-top").slideTop();
 ```
 
 
