@@ -1,81 +1,78 @@
-
-
 const addictive = {};
 
+addictive.toUp = function() {
+  (function(jQuery) {
+    $.fn.slideTop = function() {
+      console.log('holi');
+      const up = $(this);
+      up.append('<a href="#" style="text-decoration: none; color: white">&#9650;</a>');
+      up.css({'background-color': 'black',
+        'border-radius': '100%',
+        'font-size': '2.5em',
+        'position': 'fixed',
+        'padding-right': '0.3em',
+        'padding-left': '0.3em',
+        'padding-bottom': '0.2em',
+        'opacity': '0.7',
+        'display': 'none',
+        'right': '75px',
+        'bottom': '50px'});
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 100) {
+          $(up).fadeIn();
+        } else {
+          $(up).fadeOut();
+        }
+      });
 
-addictive.toDown = function() {
-  (function($) {
-    $.fn.deploy = function() {
-  $.fn.down = function(prop, speed, callback) {
-      var elem, height, width;
-      return this.each(function(i, el) {
-        el = $(el), elem = el.clone().css({
-          'height': 'auto',
-          'width': 'auto'}).appendTo('body');
-        height = elem.css('height'),
-        width = elem.css('width'),
-        elem.remove();
-        if (prop === height)
-          el.animate({'height': height}, speed, callback);
-        else if (prop === 'width')
-          el.animate({'width': width}, speed, callback);
-        else if (prop === 'both')
-          el.animate({'width': width,
-            'height': height}, speed, callback);
+      $(up).click(function() {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 600);
+        return false;
       });
     };
+  }(jQuery));
+};
 
-  const divToDown = $(this);
-  const cordDown = divToDown.offset().top - 400;
+addictive.toUp();
 
-    $(window).scroll(function() {
-      if (window.scrollY >= cordDown) {
-        $(divToDown).addClass('desplegado').down('height', 500);
-      }
-    });
-    };
-}($));
-  };
 
-addictive.toDown();
-
- 
 addictive.toRight = function() {
-   (function($) {
+  (function(jQuery) {
     $.fn.slideRight = function() {
       const divToRight = $(this);
-    const cordRight = divToRight.offset().top - 200;
-    $(window).scroll(function() {
-      if (window.scrollY >= cordRight) {
-        $(divToRight).css('position', 'relative');
-        /* Para que quede centrado, la función animate toma el ancho del div padre del div que se moverá y la divide en 2
-        *luego le resta el ancho del div que se moverá dividido en 2
-        */
-        $(divToRight).animate({left: $(divToRight).parent().width() / 2 - $('#divToRight').width() / 2});
-      };
-    });
+      const cordRight = divToRight.offset().top - 200;
+      $(window).scroll(function() {
+        if (window.scrollY >= cordRight) {
+          $(divToRight).css('position', 'relative');
+          /* Para que quede centrado, la función animate toma el ancho del div padre del div que se moverá y la divide en 2
+          *luego le resta el ancho del div que se moverá dividido en 2
+          */
+          $(divToRight).animate({left: $(divToRight).parent().width() / 2 - $('#divToRight').width() / 2});
+        };
+      });
     };
-}($));
+  }(jQuery));
 };
 addictive.toRight();
-  
 addictive.toLeft = function() {
-     (function($) {
+  (function(jQuery) {
     $.fn.slideLeft = function() {
-  const divToLeft = $(this);
-    const cordLeft = divToLeft.offset().top - 200;
-    $(window).scroll(function() {
-      if (window.scrollY >= cordLeft) {
-        console.log('somos iguales');
+      const divToLeft = $(this);
+      const cordLeft = divToLeft.offset().top - 200;
+      $(window).scroll(function() {
+        if (window.scrollY >= cordLeft) {
+          console.log('somos iguales');
 
-        $(divToLeft).css('position', 'relative');
-        /* Para que quede centrado, la función animate toma el ancho del div padre del div que se moverá y la divide en 2, luego le resta el ancho del div que se moverá dividido en 2 */
-        $(divToLeft).animate({right: $(divToLeft).parent().width() / 2 - $(divToLeft).width() / 2});
-      };
-    });
+          $(divToLeft).css('position', 'relative');
+          /* Para que quede centrado, la función animate toma el ancho del div padre del div que se moverá y la divide en 2, luego le resta el ancho del div que se moverá dividido en 2 */
+          $(divToLeft).animate({right: $(divToLeft).parent().width() / 2 - $(divToLeft).width() / 2});
+        };
+      });
     };
-}($));
-  };
-  addictive.toLeft();
+  }($));
+};
+addictive.toLeft();
 
 module.exports = addictive;
