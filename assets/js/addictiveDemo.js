@@ -51,8 +51,9 @@ addictive.toRight = function() {
     };
   }(jQuery));
 };
-
 addictive.toRight();
+
+
 addictive.toLeft = function() {
   (function(jQuery) {
     $.fn.slideLeft = function() {
