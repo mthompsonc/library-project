@@ -79,7 +79,6 @@ else, you can fork this repository and clone it in your project
 ```
 git clone https://github.com/mthompsonc/library-project
 ```
-when you are ready to upload your project you only have to ask for a Pull Request to this repository.
 
 
 ## Setup
