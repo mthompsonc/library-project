@@ -55,6 +55,7 @@ Para realizar este proyecto implementamos las siguientes complementos:
 * mocha `v.5.0.0`
 * jsdom `v.11.6.1`
 
+***
 
 ![img](https://image.ibb.co/hgvcuR/addictive_logo.png)
 
