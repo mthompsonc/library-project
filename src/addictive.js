@@ -46,8 +46,8 @@ addictive.toRight = function() { // está creando una key al objeto addictive la
       $(window).scroll(function() { // función a aplicar cuando se haga scroll a la página
         if (window.scrollY >= cordRight) { // condición: si la las coordenadas del scroll de la pantalla y las cordenadas de la posición del elemento son iguales.
           $(divToRight).css('position', 'relative'); // se le agregará al elemento la posición relativa y se desencadenará la animación.
-          /*
-          *Para que quede centrado, la función animate toma el ancho del div padre del div que se moverá y la divide en 2 luego le resta el ancho del div que se moverá dividido en 2.
+          /* Para que quede centrado, la función animate toma el ancho del div padre del div que se moverá y la divide en 2
+        *luego le resta el ancho del div que se moverá dividido en 2
         */
           $(divToRight).animate({left: $(divToRight).parent().width() / 2 - $(divToRight).width() / 2});
         };
@@ -64,8 +64,6 @@ addictive.toLeft = function() {
       const cordLeft = divToLeft.offset().top - 200;
       $(window).scroll(function() {
         if (window.scrollY >= cordLeft) {
-          console.log('somos iguales');
-
           $(divToLeft).css('position', 'relative');
           /* Para que quede centrado, la función animate toma el ancho del div padre del div que se moverá y la divide en 2, luego le resta el ancho del div que se moverá dividido en 2 */
           $(divToLeft).animate({right: $(divToLeft).parent().width() / 2 - $(divToLeft).width() / 2});
