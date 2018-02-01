@@ -6,7 +6,7 @@ Una mini librería que sirve para atraer la atención del usuario a tu página w
 
 ## Instalación
 
-Si posees npm, puedes guardarlo de la siguiente manera
+Si posees <a href="https://www.npmjs.com/package/libraryproject" title="npm">npm</a>, puedes guardarlo de la siguiente manera
 
 ```
 npm install libraryproject --save
@@ -70,7 +70,7 @@ A mini-library you can use in your webpage to draw the attention of your users w
 
 ## Install
 
-If you have npm, you can install it by the following command
+If you have <a href="https://www.npmjs.com/package/libraryproject" title="npm">npm</a>, you can install it by the following command
 
 ```
 npm install libraryproject --save
