@@ -37,7 +37,7 @@ body {
   font-size: 3em;
   color: #FF5881;
   text-align: center;
-  padding-bottom: 1.4vw;
+  margin-bottom: 1.4vw;
   padding-top: 1.4vw;
   overflow-x: none;
 }
@@ -65,17 +65,33 @@ body {
   background-color: #FF475A;
   border: 2px solid #FF322F;
   border-radius: 3px;
-  margin-bottom: 1em;
+  margin-bottom: 4em;
 }
 
-.left{
-  float:right;
-}
 
 /* Estilo a las secciones de los divs con movimiento */
 
 #toTheRight, #toTheLeft, {
   height: 70vh;
+}
+
+.subtitle2{
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.example{
+  width: 15em;
+  text-align: justify;
+  background-color: #FFFFFF; 
+  opacity: 0.7;
+  border-radius: 3vh;
+  padding: 0.8em;
+}
+
+.img{
+  width: 20em;
+  margin-bottom: 3em;
 }
 
 /* Estilo para footer. */

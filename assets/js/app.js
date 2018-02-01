@@ -1,5 +1,7 @@
 $(document).ready (function (){
- $('#divToRight').slideRight();
+  $('#divToRight').slideRight();
   $('#divToLeft').slideLeft();
   $('.up').slideTop();
+  $('.example').slideRight();
+  $('.img').slideLeft();
 });
