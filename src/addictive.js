@@ -41,7 +41,8 @@ addictive.toRight = function() { // está creando una key al objeto addictive la
   (function($) { // plugin empieza de esta manera para que así todas las variables creadas dentro de él no choquen con las de otros plugins.
     $.fn.slideRight = function() { // nombre del plugin slideRight.
       const divToRight = $(this); // a la variable divToRight le pasamos como valor el elemento al que se le aplicó el plugin.
-      const cordRight = divToRight.offset().top - 200; // cordenadas de la posición de la parte superior del elemento.
+      divToRight.css('float', 'left');
+      const cordRight = divToRight.offset().top; // cordenadas de la posición de la parte superior del elemento.
       $(window).scroll(function() { // función a aplicar cuando se haga scroll a la página
         if (window.scrollY >= cordRight) { // condición: si la las coordenadas del scroll de la pantalla y las cordenadas de la posición del elemento son iguales.
           $(divToRight).css('position', 'relative'); // se le agregará al elemento la posición relativa y se desencadenará la animación.
@@ -60,6 +61,7 @@ addictive.toLeft = function() {
   (function($) {
     $.fn.slideLeft = function() {
       const divToLeft = $(this);
+      divToLeft.css('float', 'right');
       const cordLeft = divToLeft.offset().top - 200;
       $(window).scroll(function() {
         if (window.scrollY >= cordLeft) {
