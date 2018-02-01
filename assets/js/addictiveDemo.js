@@ -33,7 +33,6 @@ addictive.toUp = function() {
     };
   }(jQuery));
 };
-
 addictive.toUp();
 
 
