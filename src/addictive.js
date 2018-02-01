@@ -5,7 +5,6 @@ const addictive = {};
 addictive.toUp = function() {
   (function($) {
     $.fn.slideTop = function() {
-      console.log('holi');
       const up = $(this);
       up.append('<a href="#" style="text-decoration: none; color: white">&#9650;</a>');
       up.css({'background-color': 'black',
