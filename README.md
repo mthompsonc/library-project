@@ -1,4 +1,4 @@
-# A(ddi)CTIVE
+![img](https://image.ibb.co/hgvcuR/addictive_logo.png)
 
 
 Una mini librería que sirve para atraer la atención del usuario a tu página web por medio de divertidas animaciones proporcionadas a los divs de tu html.
@@ -9,7 +9,7 @@ Una mini librería que sirve para atraer la atención del usuario a tu página w
 Si posees npm, puedes guardarlo de la siguiente manera
 
 ```
-npm install addictive --save
+npm install libraryproject --save
 ```
 
 Si no, puedes forkear este repositorio y clonarlo en tu proyecto
@@ -60,7 +60,9 @@ Para realizar este proyecto implementamos las siguientes complementos:
 * mocha `v.5.0.0`
 * jsdom `v.11.6.1`
 
-# A(ddi)CTIVE
+***
+
+![img](https://image.ibb.co/hgvcuR/addictive_logo.png)
 
 
 A mini-library you can use in your webpage to draw the attention of your users with fun animations given to any div (if not all!) of your html.
@@ -71,7 +73,7 @@ A mini-library you can use in your webpage to draw the attention of your users w
 If you have npm, you can install it by the following command
 
 ```
-npm install addictive --save
+npm install libraryproject --save
 ```
 
 else, you can fork this repository and clone it in your project
